@@ -23,7 +23,7 @@ angular.module('myApp.user', ['ngRoute'])
 
             var submitData = JSON.stringify(userDTO);
 
-            $httpClient.post("http://localhost:9000/api/rest/User.svc/user", submitData).then(function (response) {
+            $httpClient.post("http://localhost:9900/api/rest/User.svc/user", submitData).then(function (response) {
 
                 console.log(response.data);
 
